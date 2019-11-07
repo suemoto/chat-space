@@ -45,7 +45,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :users
-- has_many  :comments,  through:  :groups_users
+- has_many  :massages
 
 ## groups_usersテーブル
 
