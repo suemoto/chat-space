@@ -32,7 +32,7 @@ Things you may want to cover:
 |nickname|string|null: false|
 
 ### Association
-- has_many :messages
+- has_many :messages,  through:  :groups_uers
 - has_many  :groups,  through:  :groups_users
 
 ## groupsテーブル
