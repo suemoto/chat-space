@@ -39,8 +39,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
-|user_id|string|null: false, foreign_key: true|
+|name|string|null: false|
+
 ### Association
 - has_many :users
 - has_many  :massages
