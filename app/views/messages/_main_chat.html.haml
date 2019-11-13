@@ -1,0 +1,37 @@
+.main
+  .main__head
+    .main__head__group-member
+      .main__head__group-member__group
+        
+        group
+      .main__head__group-member__member
+        member :
+        .main__head__group-member__member__person
+          person
+    .main__head__exit
+    = link_to "#", class: "main__head__exit-btn" do
+      edit 
+
+  
+  .main__chat
+    .main__chat__contents
+      .main__chat__contents__block
+        .main__chat__contents__block__user
+          user
+        .main__chat__contents__block__date
+          date
+      .main__chat__contents__message
+        message 
+  .main__form   
+    %form.form
+ 
+      .main__form__block
+        %input{:type => "text", :placeholder => "type a message", :class => "input-text"}
+
+        %label{class: "input-box__image"}
+          = icon('fas', 'image', class: 'input-box__image__icon')
+          %input{:type => "file", :class => "input-box__image__file"}  
+       
+     
+      %input{:type => "submit", :value => "send", :class => "input-form__btn"} 
+
