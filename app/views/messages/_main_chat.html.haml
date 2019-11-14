@@ -10,8 +10,6 @@
     .edit
     = link_to "#", class: "edit-btn" do
       edit 
-
-  
   .chat
     .contents
       .contents__block
@@ -25,11 +23,8 @@
     %form.form
       .form__block
         %input{:type => "text", :placeholder => "type a message", :class => "input-text"}
-
         %label{class: "input-box__image"}
           = icon('fas', 'image', class: 'input-box__image__icon')
-          %input{:type => "file", :class => "input-box__image__file"}  
-       
-     
+          %input{:type => "file", :class => "input-box__image__file"}       
       %input{:type => "submit", :value => "send", :class => "input-form__btn"} 
 
