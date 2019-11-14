@@ -59,7 +59,7 @@
       height: 100px;
       padding: 0 40px;
       border-bottom: solid 1px #eeeeee;
-      &__group-member {
+      .group-member {
         margin-top: 35px;
         &__group {
           font-size: 20px;
@@ -78,7 +78,7 @@
         }
       }
      
-      &__exit-btn {
+      .edit-btn {
         display: block;
         position: absolute;
         right: 40px;
@@ -100,7 +100,7 @@
       background-color: #fafafa;
 
       overflow: scroll;
-      &__contents {
+      .contents {
         margin-bottom: 40px;
         
         &__block {

@@ -1,26 +1,26 @@
 .main
   .head
-    .head__group-member
-      .head__group-member__group
+    .group-member
+      .group-member__group
         
         group
-      .head__group-member__member
+      .group-member__member
         member :
-        .head__group-member__member__person
+        .group-member__member__person
           person
-    .head__exit
-    = link_to "#", class: "main__head__exit-btn" do
+    .edit
+    = link_to "#", class: "edit-btn" do
       edit 
 
   
   .chat
-    .chat__contents
-      .chat__contents__block
-        .chat__contents__block__user
+    .contents
+      .contents__block
+        .contents__block__user
           user
-        .chat__contents__block__date
+        .contents__block__date
           date
-      .chat__contents__message
+      .contents__message
         message 
   .message   
     %form.form
