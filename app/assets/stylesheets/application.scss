@@ -15,7 +15,7 @@
       display: flex;
       align-items: center;
       padding: 0 20px;
-      &__box {
+      &__block {
         justify-content: space-between;
         display: flex;
         width: 100%;
@@ -54,7 +54,7 @@
     position: fixed;
     width: calc(100% - 300px);
     right: 0;
-    &__head {
+    .head {
       display: flex;
       height: 100px;
       padding: 0 40px;
@@ -92,7 +92,7 @@
        }    
     }
       
-    &__chat {
+    .chat {
       
       height: calc(100vh - 285px);
 
@@ -120,20 +120,20 @@
           }
 
       
-        .message {
+        &__message {
           font-size: 14px;
           color: #434a54;
         }
       }  
     }
-    &__form {
+    .message {
       height: 50px;
       padding: 20px 40px;
       background-color: #ddd;
       .form {
         display: flex;
         
-        .main__form__block {
+        .form__block {
           display: flex;
           position: relative;
           width: 100%;
