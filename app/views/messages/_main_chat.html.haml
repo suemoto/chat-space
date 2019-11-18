@@ -1,30 +1,27 @@
 .main
   .head
+  
     .group-member
       .group-member__group
-        group
+        = @group.name
       .group-member__member
         member :
         .group-member__member__person
-          person
+          - @group.users.each do |user|
+            = user.name
+  
     .edit
-    = link_to "#", class: "edit-btn" do
+    = link_to edit_group_path(@group), class: "edit-btn" do
       edit 
   .chat
-    .contents
-      .contents__block
-        .contents__block__user
-          user
-        .contents__block__date
-          date
-      .contents__message
-        message 
-  .message   
-    %form.form
-      .form__block
-        %input{type: "text", placeholder: "type a message", class: "input-text"}
-        %label{class: "input-box__image"}
-          = icon('fas', 'image', class: 'input-box__image__icon')
-          %input{type: "file", class: "input-box__image__file"}       
-      %input{type: "submit", value: "send", class: "input-form__btn"} 
+    = render @messages
+    
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'      
 
