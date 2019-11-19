@@ -1,8 +1,8 @@
 FactoryBot.define do
-  factory messages do
-    body {}
-    image {}
+  factory :message do
+    content {Faker::Lorem.sentence}
+    image { File.new("#{Rails.root}/public/uploads/message/image/test_image.jpg") }
+    user
+    group
   end
-
-
 end
