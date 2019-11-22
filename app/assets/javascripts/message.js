@@ -1,5 +1,7 @@
 
 $(function(){
+  last_message_id = $('.contents__message__content').last(1);
+  console.log(last_message_id);
   function buildHTML(message){
     let img = message.image? `<img class="lower-message__image" src="${message.image}" alt= "test image">`: "";
     let content = message.content? `<p class="contents__message__content">${message.content}</p>`: "";
