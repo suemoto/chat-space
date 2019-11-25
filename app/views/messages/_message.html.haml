@@ -1,4 +1,4 @@
-.contents
+.contents{data: {message: {id: message.id}}}
   .contents__block
     .contents__block__user
       = message.user.name
@@ -6,6 +6,6 @@
       = message.created_at.strftime("%Y/%m/%d %H:%M")
   .contents__message
     - if message.content.present?
-      %p.contents__message__content{data: {message: {id: message.id}}}
+      %p.contents__message__content
         = message.content
     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
