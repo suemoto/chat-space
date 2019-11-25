@@ -2,7 +2,7 @@
   .head
   
     .group-member
-      .group-member__group
+      .group-member__group{data: {group: {id: @group.id}}}
         = @group.name
       .group-member__member
         member :
