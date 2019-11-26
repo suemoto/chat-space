@@ -43,7 +43,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'faker'
   gem 'jquery-rails'
-  
+
   gem 'capistrano'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
@@ -73,5 +73,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 
 gem 'carrierwave'
+
 gem 'mini_magick'
 gem 'pry-rails'
+gem 'fog-aws'
